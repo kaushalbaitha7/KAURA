@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KAURA | EETIRP LTD</title>
+
+  
+  <link rel="stylesheet" href="style.css">
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+ 
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+  
+  <div class="bg-glow"></div>
+
+ 
+  <main class="container">
+
+
+
+
+<header class="hero">
+
+  <div class="logo-wrapper">
+
+    <img
+      src="assets/logo/kaura-logo.png"
+      alt="KAURA Logo"
+      class="main-logo"
+    >
+
+  </div>
+
+</header>
+
+
+    
+    <section class="cards">
+
+      <div class="card" onclick="openProject('#')">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+        <h3>Resume Builder</h3>
+      </div>
+
+      <div class="card" onclick="openProject('#')">
+        <img src="https://cdn-icons-png.flaticon.com/512/3405/3405805.png">
+        <h3>Placement Prep</h3>
+      </div>
+
+      <div class="card" onclick="openProject('#')">
+        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png">
+        <h3>Semester Notes</h3>
+      </div>
+
+      <div class="card" onclick="openProject('#')">
+        <img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png">
+        <h3>Smart Timetable</h3>
+      </div>
+
+      <div class="card" onclick="openProject('#')">
+        <img src="https://cdn-icons-png.flaticon.com/512/2331/2331941.png">
+        <h3>Expense Tracker</h3>
+      </div>
+
+      <div class="card" onclick="openProject('#')">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png">
+        <h3>Attendance Predictor</h3>
+      </div>
+
+      <div class="card" onclick="openProject('#')">
+        <img src="https://cdn-icons-png.flaticon.com/512/3176/3176363.png">
+        <h3>To-Do Reminder</h3>
+      </div>
+
+      <div class="card" onclick="openProject('#')">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png">
+        <h3>Engineering Calculator</h3>
+      </div>
+
+      <div class="card" onclick="openProject('#')">
+        <img src="https://cdn-icons-png.flaticon.com/512/6062/6062646.png">
+        <h3>Coding Practice</h3>
+      </div>
+
+      <div class="card" onclick="openProject('#')">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+        <h3>AI Career Mentor</h3>
+      </div>
+
+    </section>
+
+    
+    <div class="buttons">
+
+      <button onclick="openAbout()">
+        About KAURA
+      </button>
+
+      <button onclick="openSupport()">
+        Support Team
+      </button>
+
+    </div>
+
+    
+    <div class="socials">
+
+      <a href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="#">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="#">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="#">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+
+    </div>
+
+  </main>
+
+  
+  <div class="modal" id="aboutModal">
+
+    <div class="modal-box">
+
+      <span class="close" onclick="closeAbout()">
+        &times;
+      </span>
+
+      <h2>About KAURA</h2>
+
+      <p>
+        KAURA is a next-generation student ecosystem developed
+        under EETIRP LTD.
+
+        The platform integrates productivity systems,
+        academic utilities, AI-powered assistance,
+        coding environments, placement preparation,
+        and innovation-driven student tools into
+        one unified digital platform.
+      </p>
+
+      <div class="about-company">
+
+        <h3>EETIRP LTD</h3>
+
+        <p>
+          Technology • Innovation • AI • Student Ecosystem
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+  <div class="modal" id="supportModal">
+
+    <div class="modal-box support-box">
+
+      <span class="close" onclick="closeSupport()">
+        &times;
+      </span>
+
+      <h2>Support & Development Team</h2>
+
+      <div class="team-grid">
+
+        
+        <div class="team-card">
+
+          <img src="https://i.pravatar.cc/200?img=12">
+
+          <h3>Kaushal Kumar Baitha</h3>
+
+          <p>Founder & Full Stack Developer</p>
+
+          <div class="team-links">
+
+            <a href="#">Portfolio</a>
+
+            <a href="#">GitHub</a>
+
+          </div>
+
+          <span>kaushal@email.com</span>
+
+          <span>+91 8088487801</span>
+
+        </div>
+
+        
+        <div class="team-card">
+
+          <img src="https://i.pravatar.cc/200?img=32">
+
+          <h3>Karthik C M</h3>
+
+          <p>Co-Founder & App Developer</p>
+
+          <div class="team-links">
+
+            <a href="#">Portfolio</a>
+
+            <a href="#">GitHub</a>
+
+          </div>
+
+          <span>karthik@email.com</span>
+
+          <span>+91 7411490271</span>
+
+        </div>
+
+        
+        <div class="team-card">
+
+          <img src="https://i.pravatar.cc/200?img=20">
+
+          <h3>Pritee Kumari Singh</h3>
+
+          <p>Marketing & Strategy Lead</p>
+
+          <div class="team-links">
+
+            <a href="#">Portfolio</a>
+
+            <a href="#">GitHub</a>
+
+          </div>
+
+          <span>pritee@email.com</span>
+
+          <span>+91 7900000000</span>
+
+        </div>
+
+       
+        <div class="team-card">
+
+          <img src="https://i.pravatar.cc/200?img=50">
+
+          <h3>Kartik D</h3>
+
+          <p>Investor & Operations Lead</p>
+
+          <div class="team-links">
+
+            <a href="#">Portfolio</a>
+
+            <a href="#">GitHub</a>
+
+          </div>
+
+          <span>kartik@email.com</span>
+
+          <span>+91 8660954976</span>
+
+        </div>
+
+        
+        <div class="team-card">
+
+          <img src="https://i.pravatar.cc/200?img=15">
+
+          <h3>Kartikeya Singh</h3>
+
+          <p>Project Coordinator & Innovation Engineer</p>
+
+          <div class="team-links">
+
+            <a href="#">Portfolio</a>
+
+            <a href="#">GitHub</a>
+
+          </div>
+
+          <span>kartikeya@email.com</span>
+
+          <span>+91 9412539590</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+<footer class="footer">
+
+  <div class="footer-text">
+
+    EETIRP LTD © 2026
+    &nbsp; | &nbsp;
+    Empowering Student Innovation
+
+  </div>
+
+</footer>
+
+
+<div class="coming-popup" id="comingPopup">
+
+  <div class="coming-box">
+
+    <div class="coming-icon">
+      🚀
+    </div>
+
+    <h2>Coming Soon</h2>
+
+    <p>
+      This KAURA module is currently under development
+      and will be launching soon.
+    </p>
+
+    <button onclick="closeComingPopup()">
+      Close
+    </button>
+
+  </div>
+
+</div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
