@@ -11,12 +11,14 @@ document.getElementById("comingPopup");
 
 function openProject(link){
 
-  if(link === "https://placementaiplatform.vercel.app"){
+ 
+  if(link === "#"){
 
     comingPopup.style.display = "flex";
 
   }
 
+  
   else{
 
     document.body.style.opacity = "0.95";
@@ -30,6 +32,7 @@ function openProject(link){
   }
 
 }
+
 
 function closeComingPopup(){
 
