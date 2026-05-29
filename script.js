@@ -11,22 +11,25 @@ document.getElementById("comingPopup");
 
 function openProject(link){
 
-
-  if(link === "#"){
+  if(link === "https://placementaiplatform.vercel.app"){
 
     comingPopup.style.display = "flex";
 
   }
 
- 
   else{
 
-    window.open(link, "_blank");
+    document.body.style.opacity = "0.95";
+
+    setTimeout(() => {
+
+      window.location.href = link;
+
+    }, 150);
 
   }
 
 }
-
 
 function closeComingPopup(){
 
