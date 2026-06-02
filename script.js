@@ -69,6 +69,20 @@ function closeSupport(){
 }
 
 
+function openFeedback(){
+
+    document.body.style.opacity = "0.95";
+
+    setTimeout(() => {
+
+        window.location.href =
+        "https://forms.gle/YgeH3E12KkQznG116";
+
+    }, 150);
+
+}
+
+
 
 window.addEventListener("click", function(e){
 
