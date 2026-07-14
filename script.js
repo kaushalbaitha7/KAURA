@@ -1,126 +1,91 @@
+/* ===========================================
+            KAURAHUB SCRIPT
+=========================================== */
 
-const aboutModal =
-document.getElementById("aboutModal");
+/* Coming Soon */
 
-const supportModal =
-document.getElementById("supportModal");
+function comingSoon(){
 
-const comingPopup =
-document.getElementById("comingPopup");
-
-
-function openProject(link){
-
- 
-  if(link === "#"){
-
-    comingPopup.style.display = "flex";
-
-  }
-
-  
-  else{
-
-    document.body.style.opacity = "0.95";
-
-    setTimeout(() => {
-
-      window.location.href = link;
-
-    }, 150);
-
-  }
+    alert("🚀 This platform is currently under development and will be available soon.");
 
 }
 
 
-function closeComingPopup(){
+/* ===========================================
+        Smooth Internal Navigation
+=========================================== */
 
-  comingPopup.style.display = "none";
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
-}
+    anchor.addEventListener("click",function(e){
 
+        const target=document.querySelector(this.getAttribute("href"));
 
+        if(target){
 
-function openAbout(){
+            e.preventDefault();
 
-  aboutModal.style.display = "flex";
+            target.scrollIntoView({
 
-}
+                behavior:"smooth"
 
-function closeAbout(){
+            });
 
-  aboutModal.style.display = "none";
+        }
 
-}
-
-
-
-function openSupport(){
-
-  supportModal.style.display = "flex";
-
-}
-
-function closeSupport(){
-
-  supportModal.style.display = "none";
-
-}
-
-
-function openFeedback(){
-
-    document.body.style.opacity = "0.95";
-
-    setTimeout(() => {
-
-        window.location.href =
-        "https://forms.gle/YgeH3E12KkQznG116";
-
-    }, 150);
-
-}
-
-
-
-window.addEventListener("click", function(e){
-
-
-  if(e.target === aboutModal){
-
-    aboutModal.style.display = "none";
-
-  }
-
- 
-  if(e.target === supportModal){
-
-    supportModal.style.display = "none";
-
-  }
-
-  
-  if(e.target === comingPopup){
-
-    comingPopup.style.display = "none";
-
-  }
+    });
 
 });
 
 
+/* ===========================================
+        Navbar Shadow on Scroll
+=========================================== */
 
-document.addEventListener("keydown", function(e){
+window.addEventListener("scroll",()=>{
 
-  if(e.key === "Escape"){
+    const navbar=document.querySelector(".navbar");
 
-    aboutModal.style.display = "none";
+    if(window.scrollY>40){
 
-    supportModal.style.display = "none";
+        navbar.style.boxShadow="0 10px 30px rgba(0,0,0,.08)";
 
-    comingPopup.style.display = "none";
+    }
 
-  }
+    else{
+
+        navbar.style.boxShadow="0 3px 18px rgba(0,0,0,.05)";
+
+    }
+
+});
+
+
+/* ===========================================
+        Fade In Animation
+=========================================== */
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},{threshold:.15});
+
+
+document.querySelectorAll(
+
+".card,.why-box,.update,.contact-card"
+
+).forEach(el=>{
+
+observer.observe(el);
 
 });
