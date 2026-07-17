@@ -63,7 +63,7 @@ body{
 
     padding:0 8%;
 
-    background:rgba(255,255,255,.9);
+    background:rgba(12, 8, 36, 0.9);
 
     backdrop-filter:blur(18px);
 
@@ -93,7 +93,7 @@ nav{
 
 nav a{
 
-    color:#334155;
+    color:#dfe3ea;
 
     text-decoration:none;
 
