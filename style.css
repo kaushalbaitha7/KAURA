@@ -1225,3 +1225,35 @@ transform:translateY(0);
     background:#1d4ed8;
 
 }
+
+.company-link{
+
+    text-decoration:none;
+
+    color:#2563eb;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.company-link:hover{
+
+    color:#1d4ed8;
+
+    text-decoration:underline;
+
+}
+.team-card{
+    transition:0.3s ease;
+}
+
+.team-card[onclick]{
+    cursor:pointer;
+}
+
+.team-card[onclick]:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(37,99,235,.18);
+}
